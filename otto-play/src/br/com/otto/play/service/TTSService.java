@@ -81,7 +81,7 @@ public class TTSService {
 		
 		final String outputFormat = ConstantUtil.AUDIO_OUTPUT_FORMAT;
 		final String deviceLanguage = ConstantUtil.PT_BR;
-		final String genderName = ConstantUtil.Female;
+		final String genderName = ConstantUtil.MALE;
 		final String voiceName = ConstantUtil.VOICE_NAME;
 
 		try {

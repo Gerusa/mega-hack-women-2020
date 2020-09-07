@@ -19,9 +19,9 @@ public class ConstantUtil {
 	public static final String URI_FREE_SERVICE = "https://westus.tts.speech.microsoft.com/cognitiveservices/v1";
 
 	// propriedades audio
-	public static final String Female = "Female";
+	public static final String MALE = "male";
 	public static final String AUDIO_OUTPUT_FORMAT = "riff-24khz-16bit-mono-pcm";
 	public static final String PT_BR = "pt-BR";
-	public static final String VOICE_NAME = "pt-BR-HeloisaRUS";
+	public static final String VOICE_NAME = "pt-BR-Daniel-Apollo";
 
 }
