@@ -1,7 +1,7 @@
 var isPlay = false;
 var totalPagina = 0;
 
-var pgParaDemo = 5; // apenas para demo - alterar para 0 
+var pgParaDemo = 6; // apenas para demo - alterar para 0 
 var paginaAtual = pgParaDemo; 
 
 function pauseHide() {
@@ -52,7 +52,7 @@ function startPlay() {
 		//consulta o total de páginas do livro
 		return new Promise(function(resolve, reject) {
 			$.ajax({
-				url : '/otto/pagina?livro=' + nomeLivro,
+				url : '/otto-play/pagina?livro=' + nomeLivro,
 				type : 'GET',
 				success : function(response) {
 					console.log("Total de páginas: " + response);
@@ -89,7 +89,7 @@ function getAudioDaPagina(nomeLivro) {
 	
 	return new Promise(function(resolve, reject) {
 		$.ajax({
-			url : '/otto/audio?livro=' + nomeLivro + "&pg=" + paginaAtual,
+			url : '/otto-play/audio?livro=' + nomeLivro + "&pg=" + paginaAtual,
 			type : 'GET',
 			success : function(response) {
 				// alterar para retornar audio

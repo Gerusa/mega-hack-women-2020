@@ -7,6 +7,11 @@ O projeto Otto Play extrai textos de um pdf e os converte em aúdio, ou seja, re
 A sintetização do texto em áudio é feita através de uma API de Serviços Cognitivos do Azure, a *text-to-speech*. 
 A mesma pode ser utilizada via SDK ou REST, sendo esta última a forma adotada por este projeto.
 
+*Obs:*</br>
+A sintetização do texto em voz está sendo feita do lado servidor.</br>
+É possível alterar para que a sintetização seja feita do lado cliente, adicionando a implementação em *getAudioDaPagina* no arquivo *scripts.js*.
+
+
 ## Sobre a API
 
 A API *text-to-speech* foi adotada por ser um recurso possível de ser utilizado por um período gratuíto em nossa região (Brasil), possibilitando, dessa forma, a ilustração da leitura digital.</br>
